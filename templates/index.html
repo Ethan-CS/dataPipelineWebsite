@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Data Pipeline Project Home</h1>
+  <p>Welcome to the Data Pipeline Project, a website developed by <em>Ethan</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>Information about entries:</p>
+  <ul>
+    <li><strong>Number of entries:</strong> {{ num_entries }}</li>
+  </ul>
+  <a href="{% url 'form' %}">Enter data</a>
+{% endblock %}
